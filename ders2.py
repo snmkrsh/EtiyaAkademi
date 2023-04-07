@@ -1,0 +1,96 @@
+# diziler - listeler -start
+print("**********************")
+sayilar = [100, 200, 300, 400, 500, "Merhaba", 15.5, True] #listedeki tüm elemanların veri tipi aynı olmak zorunda DEĞİL!
+#Programcı saymaya 0dan başlar
+# index indis => 0 başlangıç değeri -1 son index
+print(sayilar[0])
+print(sayilar[5])
+
+print(sayilar)
+sayilar.append(100)
+sayilar.append(600) # -> listenin sonuna eleman ekler.
+print(sayilar)
+sayilar.pop() # -> index'deki elemanı siler (default son index)
+print(sayilar)
+sayilar.remove("Merhaba") # -> pop'un aksine indexe göre değil değere göre siler.
+print(sayilar)
+sayilaraEkleme = [700,800,900]
+sayilar.extend(sayilaraEkleme) #-> append'in aksine tek bir değer değil listedeki tüm elemanları listeye ekler
+print(sayilar)
+sayilar.clear() # -> Dizinin içini boşaltan fonksiyon
+print(sayilar) 
+
+# diziler - listeler -end
+
+# string interpolation -start
+hello = "Merhaba"
+userName = "Halit"
+totalText = hello + " " + userName
+print(totalText)
+
+totalText = "{message} {name}".format(message=hello, name=userName)
+print(totalText)
+
+# f-string
+totalText = f"Hoşgeldiniz {userName}"
+print(totalText)
+# string interpolation -end
+
+# karar yapıları -start
+ortalamaNot = input("Lütfen ortalamanızı giriniz: ")
+
+# numerik => int, double
+#type conversion -start
+ortalamaNotAsInteger = int(ortalamaNot)
+#type conversion -end
+
+#if else blokları
+# 4 satır => 1 tab/indent
+
+#indent
+if ortalamaNotAsInteger > 80:
+    print("Bravo")
+    # if ortalamaNotAsInteger > 80:
+    #     print("Başarıyla Geçtiniz")
+#else if -> elif
+elif ortalamaNotAsInteger > 60:
+    print("Ortalama")
+elif ortalamaNotAsInteger > 50:
+    print("Normal")
+else:
+    print("Malesef")
+    print("Kaldınız")
+
+studentCount = 44
+if studentCount > 20:
+    print("Öğrenciler ders için hazır")
+
+print("İf bloğundan bağımsız kısım")
+
+
+vize = int(input("Vize notunuzu giriniz: "))
+final = int(input("Final notunuzu giriniz: "))
+ortalama = (vize * 0.4) + (final * 0.6) 
+
+# eğer final 40'dan küçükse kullanıcı kaldı
+# eğer ortalama 50'den küçükse kullanıcı kaldı
+# eğer vize finalin 2 katı ise kullanıcı kaldı
+# bunun dışındaki tüm durumlarda kullanıcı geçti yazdırmak istiyoruz.
+
+#condition-logic
+# or and
+# (true or false) => true => sol ve sağındaki koşullardan en az birisinin true olmasını istiyor 
+# (true and false) => false => sol ve sağındaki koşulların ikisinin de kesinlikle true olmasını ister
+if final < 40 or ortalama < 50 or vize == final *2:
+    print("Kaldı")
+# elif ortalama < 50:
+#     print("Kaldı")
+# elif vize == final * 2:
+#     print("Kaldı")
+else:
+    print("Geçti")
+
+# karar yapıları -end
+
+
+
