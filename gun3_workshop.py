@@ -4,7 +4,7 @@ for i in range(10):
     numbers.append(num) #aldığımız veriyi diziye ekledik append() komutu bunun için kullanıldı, listenin sonuna yeni ögeyi ekler.
 print(numbers)
 
-smallNum = min(numbers) # en küçük sayı
+smallNum = min(numbers)  # en küçük sayı
 biggestNum = max(numbers) # en büyük sayma
 
 print(f'Girilen En Küçük Değer: {smallNum}') # en küçük değer.
@@ -16,10 +16,10 @@ for evenNum in range(0,biggestNum,2):  # 0 dan başlattığımız için çift mi
 
 
 # alt limit belirleyip listemizdeki üst limite kadar ikişer saydırdıık.        
-upNum= int(input("Alt limit giriniz: "))
+dNum= int(input("Alt limit giriniz: "))
 num2 = int(input("Alt limit belirlemek için 1 giriniz: ")) #saydırma işlemi için alt taban belirledik.
 if num2 == 1:
-     for i in range(upNum, biggestNum, 2):
+     for i in range(dNum, biggestNum, 2):
           print(i)
 else:
      print("Geçersiz bir giriş yapildi.")
