@@ -1,16 +1,17 @@
-numbers = []
+numbers = []  # bos bir liste olusturduk.
 for i in range(10):
     num = int(input("Sayi Giriniz: ")) #kullanıcıdan veri istedik.
     numbers.append(num) #aldığımız veriyi diziye ekledik append() komutu bunun için kullanıldı, listenin sonuna yeni ögeyi ekler.
 print(numbers)
 
-smallNum = min(numbers)
-biggestNum = max(numbers)
+smallNum = min(numbers) # en küçük sayı
+biggestNum = max(numbers) # en büyük sayma
 
 print(f'Girilen En Küçük Değer: {smallNum}') # en küçük değer.
 print(f'Girilen En Büyük Değer: {biggestNum}') # en büyük değer.
 
-for evenNum in range(0,biggestNum,2):  # 0 dan başlayıp en büyük sayıya kadar olan çift sayıları yazdırdık.
+# 0 dan başlayıp en büyük sayıya kadar olan çift sayıları yazdırdık.
+for evenNum in range(0,biggestNum,2):  # 0 dan başlattığımız için çift mi tek mi bakmamıza gerek yok.
         print(evenNum)
 
 
