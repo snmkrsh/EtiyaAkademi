@@ -1,7 +1,7 @@
 # Fonksiyonlar
 # Kendini tekrarlayacak olan yapiları tek elden ilerletmemize olağan sağlayan yapilardir.
 # defination kelimesinden gelen def keywordü ile tanimlanirler.
-"""
+
 def ortalamaHesapla() -> None: # Bu fonksiyonda return yok geriye değer dönmüyor.
     # none dönecektir yazdık bu yazma şekli zorunlu değildir bilgilendirme amaçlıdır.
     final = 60
@@ -90,7 +90,7 @@ while True:
         calculateMod()
     else:
         print("Hatali İslem Seçildi:")
-"""
+
 # Class, nesne, obje, sınıf
 class Human:
     name = ""
