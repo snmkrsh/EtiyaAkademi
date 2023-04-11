@@ -54,7 +54,7 @@ choose = 0
 while choose == 0:
     num1 = int(input("Bir sayi giriniz: "))
     num2 = int(input("İkinci sayiyi giriniz: "))
-    qProcess = input("Bir işlem Seçiniz: /cikis için 'q' ya basabilirsiniz! ")
+    qProcess = input("Toplama için '+' , Çıkarma için '-', Çarpma için '*', Bölme için '/', Mod almak için '%', Çikis yapmak için 'q' ya basabilirsiniz! : ")
     if qProcess == 'q':
         print("Cikis Yapiliyor.")
         choose == 1
